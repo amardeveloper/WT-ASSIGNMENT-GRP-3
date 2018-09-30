@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASB tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="amar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .circle{
+      border-radius: 50%;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.text1{
+     color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+</style>
+</head>
+<body>
+  <header class="tm-header">
+  <div class="tm-container">
+      
+    <img class="tm-logo" src="logo2.JPG" alt="logo" width="100" height="70" class="tm-logo"/>
+    <img src="myself.gif" alt="AmarSoBilal" height="70" width="70">
+    <nav class="tm-nav">
+    <a href="#"><i class="fa fa-home" ></i>HOME</a>
+     <a href="about.html" target="_blank"><i class="fa fa-code" aria-hidden="true"></i>About</a>
+    <a href="#chat"><i class="fa fa-comments" aria-hidden="true"></i>Contact Us</a>
+    <a href="newform.html" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</a>
+    <div class="sidebar">
+</div>
+
+<div class="main-content">
+  
+  
+</div>
+  </nav>
+    </div>
+    </header> 
+      
+      <div class="tm-container">
+
+        <div class="tm-content">
+
+   
+    <article class="tm-article">
+ <h1 style="font-size: 35px"><b>HTML Colors</b></h1><br>
+      <p><b></b></p>
+      <p>HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p><br>
+      <h1></h1><br>
+      <p>Color Names</p><p>In HTML, a color can be specified by using a color name:</p><br>
+      <p>Background Color</p><p>You can set the background color for HTML elements:</p><br>
+      <img src=d1.JPG>
+      <img src=c1.JPG>
+      <p>Text Color</p><p>You can set the color of text:</p>
+      <h1>Hello World</h1><br>
+      <p>Border Color</p><br>
+        <p>You can set the color of borders:</p><br>
+        <img src=d2.JPG>
+        <img src=c2.JPG>
+        <p>Color Values</p><br>
+        <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p><br>
+        <p>Same as color name "Tomato":</p><br>
+        <img src=d3.JPG>
+        <img src=c3.JPG>
+        <h1>RGB Value</h1><p>In HTML, a color can be specified as an RGB value, using this formula:</p><p>rgb(red, green, blue)</p><p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p><p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p><p>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</p><p>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</p><p>Experiment by mixing the RGB values below:</p><br>
+        <img src=d4.JPG>
+        <img src=c4.JPG>
+        <p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+         <img src=d5.JPG>
+       <img src=c5.JPG>
+       <p>HEX Value</p><p>In HTML, a color can be specified using a hexadecimal value in the form:</p><p>#rrggbb<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p><p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p><br>
+      <img src=d6.JPG>
+      <img src=idk.JPG>
+        <p>Shades of gray are often defined using equal values for all the 3 light sources:<p>
+        <img src=d7.JPG>
+        <img src=c7.JPG>
+        <h1>HSL Value</h1>
+<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p><p>hsl(hue, saturation, lightness)</p><p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p><p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p><p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p><br>
+<img src=d8.JPG>
+<img src=c8.JPG>
+<h1>Saturation</h1><p>Saturation can be described as the intensity of a color.</p>
+<p>100% is pure color, no shades of gray</p>
+<p>50% is 50% gray, but you can still see the color.</p>
+<p>0% is completely gray, you can no longer see the color.</p><br>
+<img src=d9.JPG>
+<img src=c9.JPG>
+<h1>Lightness</h1><p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p><br>
+<img src=d10.JPG>
+<img src=c10.JPG>
+<h1>RGBA Value</h1>
+<p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An RGBA color value is specified with:</p>
+<p>rgba(red, green, blue, alpha)</p>
+<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+<img src=d11.JPG>
+<img src=c11.JPG>
+<h1>HSLA Value</h1>
+<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An HSLA color value is specified with:</p>
+<p>hsla(hue, saturation, lightness, alpha)</p>
+<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+<img src=d12.JPG>
+<img src=c12.JPG>
+
+    </article>
+     <button class="button" type="button"><a href="cssfile.html">Next>></a></button>
+    <button class="button" type="button"><a href="#top">TOP</button>
+    <button class="button" type="button"><a href="comments.html">&lt&ltPrev</a></button>
+    </div>
+     <aside class="tm-side1">
+        <div class="container">
+  <img  class="circle" src="coders.png" alt="Avatar" height="200" width="350" class="image">
+  <div class="overlay">
+    <div class="text1"><p style="font-size: 25px">WELCOME M.K.GOURISARIA SIR!!!</p></div>
+  </div>
+</div>
+      
+    </aside>
+    <aside class="tm-side">
+      <h3>Related Topics</h3>
+      <ul>
+        <li><a href="#">HTML History</a></li>
+        <li><a href="basics.html">HTML Basics</a></li>
+        <li><a href="elements.html">HTML Elements</a></li>
+        <li><a href="headings.html">HTML Headings</a></li>
+        <li><a href="paragraph.html">HTML Paragraphs</a></li>
+        <li><a href="ss(1).html">HTML Styles</a></li>
+        <li><a href="textformatting.html">HTML Text Formatting</a></li>
+        <li><a href="quotation.html">HTML Quotations</a></li>
+        <li><a href="comments.html">HTML Comments</a></li>
+        <li><a href="color.html">HTML Colors</a></li>
+        <li><a href="cssfile.html">HTML & CSS</a></li>
+        <li><a href="new1.html">HTML Links</a></li>
+        <li><a href="2nd.html">HTML Images</a></li>
+        <li><a href="tables.html">HTML Tables</a></li>
+        <li><a href="lists.html">HTML Lists</a></li>
+        <li><a href="">HTML Blocks</a></li>
+        <li><a href="id.html">HTML Id</a></li>
+        <li><a href="filepaths.html">HTML Filepaths</a></li>
+        <li><a href="entities.html">HTML Entities</a></li><br>
+        <h3><b>HTML FORMS</b></h3>
+        <li><a href="forms.html">FORMS</a></li>
+        <li><a href="form elements.html">FORM Elements </a></li>
+        <li><a href="htmlinput.html">FORM Input types</a></li>
+        <li><a href="htmlinputattri.html">HTML Input attributes</a></li><br>
+        <h3><b>HTML FRAMES</b></h3>
+        <li><a href="html1.html">HTML Frames and Elements</a></li>
+        <li><a href="html2.html">Frames Attributes</a></li>
+        <li><a href="html3.html">HTML iFrames</a></li>
+
+        
+      </ul>
+    </aside>
+     <aside id="chat" class="tm-sidebar">
+      <h3 >Follow Us On</h3>
+      <ul >
+        <li><i class="fa fa-youtube" aria-hidden="true"></i>
+<a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><i class="fa fa-facebook-square" aria-hidden="true"></i><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i><a href="https://www.snapchat.com" target="_blank">Snapchat</a></li>
+      </ul>
+    </aside>
+    <aside class="tm-side2">
+      <h3>For Queries</h3>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>1706108@kiit.ac.in</p>
+      <h3>Address:</h3>
+      <p>3C-216,KP-6,KIIT UNIVERSITY</p>
+    </aside>
+
+</div>
+<footer class="tm-footer">
+      &copy  Copyright AmarSoBilal 2018 
+      
+</footer>
+<script>
+  (function() {
+    var cx = 'YOUR_ENGINE_ID';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="YOUR_RESULTS_PAGE_URL"></gcse:searchbox-only>
+</body>
+</html>

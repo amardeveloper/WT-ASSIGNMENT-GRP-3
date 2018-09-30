@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASB tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="amar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .circle{
+      border-radius: 50%;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.text1{
+     color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+</style>
+</head>
+<body>
+  <header class="tm-header">
+  <div class="tm-container">
+      
+    <img class="tm-logo" src="logo2.JPG" alt="logo" width="100" height="70" class="tm-logo"/>
+    <img src="myself.gif" alt="AmarSoBilal" height="70" width="70">
+    <nav class="tm-nav">
+    <a href="#"><i class="fa fa-home" ></i>HOME</a>
+     <a href="about.html" target="_blank"><i class="fa fa-code" aria-hidden="true"></i>About</a>
+    <a href="#chat"><i class="fa fa-comments" aria-hidden="true"></i>Contact Us</a>
+    <a href="newform.html" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</a>
+    <div class="sidebar">
+</div>
+
+<div class="main-content">
+  
+  
+</div>
+  </nav>
+    </div>
+    </header> 
+      
+      <div class="tm-container">
+
+        <div class="tm-content">
+
+   
+    <article class="tm-article">
+       <center><h1>STYLE SHEET </H1></center>
+
+    </br></br></br></br></br></br>
+<div class="entry-content">
+<p>Styles in HTML are basically rules that describe how a document will be presented in a browser. Style information can be either attached as a separate document or embedded in the HTML document. </p>
+<p>There are 3 ways of implementing style in HTML :</p>
+<ol>
+<li><strong>Inline Style</strong> : In this method, the style attribute is used inside the HTML start tag. </li>
+<li><strong>Embedded Style</strong> : In this method, the style element is used inside the &lt;head&gt; element of the document.</li>
+<li><strong>External Style Sheet</strong> : In this method the &lt;link&gt; element is used to point to an external CSS file. </li>
+</ol>
+<p></p> tnDiv">
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 style=&quot;color:Blue;font-size:25px;&quot;&gt;
+                Example of Inline Style&lt;/h1&gt;
+
+&lt;p style=&quot;color:red;&quot;&gt;First paragraph&lt;/p&gt;
+
+&lt;p style=&quot;color:green;font-size:40px;&quot;&gt;
+                        Second paragraph&lt;/p&gt;
+
+&lt;hr style=&quot;border-color:orange;&quot;&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><strong>Output :</strong><br />
+<img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-12-16-at-8.27.52-PM.png" alt="" width="618" height="218" class="aligncenter size-full wp-image-280990" /><br />
+</p><br/>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- post_top_responsive -->
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-9465609616171866"
+          data-ad-slot="4501693235"
+          data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <br/>
+            
+<h3>Embedded Style :</h3>
+<p>Embedded or internal style sheets only affect the document they are embedded in. Embedded style sheets are defined in the &lt;head&gt; section of an HTML document using the &lt;style&gt; tag.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;!DOCTYPE html&gt;
+&lt;html lang = &quot;en&quot;&gt;
+&lt;head&gt;
+&lt;style type = &quot;text/css&quot;&gt;
+body { background-color : powderblue; }
+h1{color:black; font-family : arial;}
+p{color:yellow; font - family : verdana;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Example of Embedded Style&lt;/h1&gt;
+    &lt;p&gt;First paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+<p><strong>Output :</strong><br />
+<img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-12-16-at-8.36.33-PM.png" alt="" width="537" height="134" class="aligncenter size-full wp-image-280991" /><br />
+</p>
+<h3>External Style Sheet :</h3>
+<p>External Style Sheets method can be useful when the CSS has to be applied to various web pages. An external style sheet holds all the style rules in a separate document that you can link from an HTML file on your site.<br />
+There are two ways of attaching external style sheets &#8211;</p>
+<li><strong>Linking External Style Sheets</strong> :<br />
+In this method, an external style sheet is linked to an HTML document using the &lt;link&gt; tag.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; 
+            href=&quot;/html/css/externalstyle.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;Example of Linking External Style Sheet&lt;/h3&gt;
+    &lt;p&gt;First paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><strong>Output :</strong><br />
+<img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-12-16-at-8.43.06-PM.png" alt="" width="381" height="102" class="aligncenter size-full wp-image-280998" /></li>
+<p></p>
+<li><strong>Importing External Style Sheets </strong>:<br />
+External style sheets can be loaded into an HTML document using &#8220;@import&#8221;. The &#8220;@import&#8221; statement instructs the browser to load the CSS file. Other CSS rules can also be included using the &lt;style&gt; element.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style type = &quot;text/css&quot;&gt; 
+    @import url(&quot;/html/css/importstyle.css&quot;);
+p{color:powderblue; font - size : 30px;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;Example of external style sheet using import&lt;/h3&gt;
+    &lt;p&gt;First paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </article>
+     <button class="button" type="button"><a href="textformatting.html">Next>></a></button>
+    <button class="button" type="button"><a href="#top">TOP</button>
+    <button class="button" type="button"><a href="headings.html">&lt&ltPrev</a></button>
+    </div>
+     <aside class="tm-side1">
+        <div class="container">
+  <img  class="circle" src="coders.png" alt="Avatar" height="200" width="350" class="image">
+  <div class="overlay">
+    <div class="text1"><p style="font-size: 25px">WELCOME M.K.GOURISARIA SIR!!!</p></div>
+  </div>
+</div>
+      
+    </aside>
+    <aside class="tm-side">
+      <h3>Related Topics</h3>
+      <ul>
+        <li><a href="web.html">HTML History</a></li>
+        <li><a href="basics.html">HTML Basics</a></li>
+        <li><a href="elements.html">HTML Elements</a></li>
+        <li><a href="headings.html">HTML Headings</a></li>
+        <li><a href="#">HTML Paragraphs</a></li>
+        <li><a href="ss(1).html">HTML Styles</a></li>
+        <li><a href="textformatting.html">HTML Text Formatting</a></li>
+        <li><a href="quotation.html">HTML Quotations</a></li>
+        <li><a href="comments.html">HTML Comments</a></li>
+        <li><a href="color.html">HTML Colors</a></li>
+        <li><a href="cssfile.html">HTML & CSS</a></li>
+        <li><a href="new1.html">HTML Links</a></li>
+        <li><a href="2nd.html">HTML Images</a></li>
+        <li><a href="tables.html">HTML Tables</a></li>
+        <li><a href="lists.html">HTML Lists</a></li>
+        <li><a href="">HTML Blocks</a></li>
+        <li><a href="id.html">HTML Id</a></li>
+        <li><a href="filepaths.html">HTML Filepaths</a></li>
+        <li><a href="entities.html">HTML Entities</a></li><br>
+        <h3><b>HTML FORMS</b></h3>
+        <li><a href="forms.html">FORMS</a></li>
+        <li><a href="form elements.html">FORM Elements </a></li>
+        <li><a href="htmlinput.html">FORM Input types</a></li>
+        <li><a href="htmlinputattri.html">HTML Input attributes</a></li><br>
+        <h3><b>HTML FRAMES</b></h3>
+        <li><a href="html1.html">HTML Frames and Elements</a></li>
+        <li><a href="html2.html">Frames Attributes</a></li>
+        <li><a href="html3.html">HTML iFrames</a></li>
+
+        
+      </ul>
+    </aside>
+     <aside id="chat" class="tm-sidebar">
+      <h3 >Follow Us On</h3>
+      <ul >
+        <li><i class="fa fa-youtube" aria-hidden="true"></i>
+<a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><i class="fa fa-facebook-square" aria-hidden="true"></i><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i><a href="https://www.snapchat.com" target="_blank">Snapchat</a></li>
+      </ul>
+    </aside>
+    <aside class="tm-side2">
+      <h3>For Queries</h3>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>1706108@kiit.ac.in</p>
+      <h3>Address:</h3>
+      <p>3C-216,KP-6,KIIT UNIVERSITY</p>
+    </aside>
+
+</div>
+<footer class="tm-footer">
+      &copy  Copyright AmarSoBilal 2018 
+      
+</footer>
+<script>
+  (function() {
+    var cx = 'YOUR_ENGINE_ID';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="YOUR_RESULTS_PAGE_URL"></gcse:searchbox-only>
+</body>
+</html>

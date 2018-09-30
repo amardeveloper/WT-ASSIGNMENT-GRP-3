@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASB tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="amar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .circle{
+      border-radius: 50%;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.text1{
+     color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+</style>
+</head>
+<body>
+  <header class="tm-header">
+  <div class="tm-container">
+      
+    <img class="tm-logo" src="logo2.JPG" alt="logo" width="100" height="70" class="tm-logo"/>
+    <img src="myself.gif" alt="AmarSoBilal" height="70" width="70">
+    <nav class="tm-nav">
+    <a href="#"><i class="fa fa-home" ></i>HOME</a>
+     <a href="about.html" target="_blank"><i class="fa fa-code" aria-hidden="true"></i>About</a>
+    <a href="#chat"><i class="fa fa-comments" aria-hidden="true"></i>Contact Us</a>
+    <a href="newform.html" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</a>
+    <div class="sidebar">
+</div>
+
+<div class="main-content">
+  
+  
+</div>
+  </nav>
+    </div>
+    </header> 
+      
+      <div class="tm-container">
+
+        <div class="tm-content">
+
+   
+    <article class="tm-article">
+<h1>HTML Input Types</h1></head>
+<body>
+<p>This chapter describes the different input types for the < input > element.</p>
+
+<h2>Input Type Text</h2>
+< input type="text" > defines a one-line text input field:
+
+<br>
+<h3><b>Example</b></h3>
+< form ><br>
+  First name:<br>
+  < input type="text" name="firstname" ><br>
+  Last name:<br>
+  < input type="text" name="lastname" >
+< /form >
+<br><b>This is how the HTML code above will be displayed in a browser:</b>
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+
+<h2><b>Input Type Password</b></h2>
+< input type="password" > defines a password field:
+
+<h3><b>Example</b></h3>
+< form ><br>
+  User name:<br>
+  < input type="text" name="username" ><br>
+  User password:<br>
+  < input type="password" name="psw" >
+< /form >
+<br><b>This is how the HTML code above will be displayed in a browser:</b>
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+The characters in a password field are masked (shown as asterisks or circles).
+
+<h2><b>Input Type Submit</b></h2>
+< input type="submit" > defines a button for submitting form data to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+
+<h3><b>Example</b></h3>
+<br>< form action="/action_page.php" ><br>
+  First name:<br>
+  < input type="text" name="firstname" value="Ankita" ><br>
+  Last name:<br>
+  < input type="text" name="lastname" value="Agarwal" ><br><br>
+  < input type="submit" value="Submit" >
+< /form >
+<p><b>This is how the HTML code above will be displayed in a browser:</b>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Ankita"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Agarwal"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+If you omit the submit button's value attribute, the button will get a default text:
+
+<h3><b>Example</b></h3>
+<p>< form action="/action_page.php" >
+  <br>First name:<br>
+  < input type="text" name="firstname" value="Ankita "><br>
+  Last name:<br>
+  < input type="text" name="lastname" value="Agarwal "><br><br>
+  < input type="submit" >
+<br>< /form >
+<p><h4>Input Type Reset</h4>
+< input type="reset" > defines a reset button that will reset all form values to their default values:
+
+<h3><b>Example</b></h3>
+<p>< form action="/action_page.php" >
+   <br>First name:<br>
+  < input type="text" name="firstname" value="Ankita" ><br>
+  Last name:<br>
+  < input type="text" name="lastname" value="Agarwal" ><br><br>
+  < input type="submit" value="Submit" >
+  < input type="reset" >
+< /form >
+<br><b>This is how the HTML code above will be displayed in a browser:</b>
+<form action="/action_page.php">
+   First name:<br>
+  <input type="text" name="firstname" value="Ankita"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Agarwal"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+
+<h2><b>Input Type Radio</b></h2>
+< input type="radio" > defines a radio button.
+
+<br>Radio buttons let a user select ONLY ONE of a limited number of choices:
+
+<h3><b>Example</b></h3>
+<br>< form >
+  < input type="radio" name="gender" value="male" checked > Male<br>
+  < input type="radio" name="gender" value="female" > Female<br>
+  < input type="radio" name="gender" value="other" > Other
+< /form >
+<br><b>This is how the HTML code above will be displayed in a browser:</b>
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+ 
+<h2><b>Input Type Checkbox</b></h2>
+< input type="checkbox" > defines a checkbox.
+
+<br>Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+<h3><b>Example</b></h3>
+<br>< form >
+<br> < input type="checkbox" name="vehicle1" value="Bike" > I have a bike<br>
+<br>< input type="checkbox" name="vehicle2" value="Car" > I have a car 
+<br>< /form >
+<br><b>This is how the HTML code above will be displayed in a browser:</b>
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+<h2><b>Input Type Button</b></h2>
+< input type="button" > defines a button:
+
+<h3><b>Example</b></h3>
+< input type="button" onclick="alert('Hello World!')" value="Click Me!" >
+This is how the HTML code above will be displayed in a browser:
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<h2>HTML5 Input Types</h2>
+<br>HTML5 added several new input types:
+
+<br>1.color
+<br>2.date
+<br>3.datetime-local
+<br>4.email
+<br>5.month
+<br>6.number
+<br>7.range
+<br>8.search
+<br>9.tel
+<br>10.time
+<br>11.url
+<br>12.week
+<br>New input types that are not supported by older web browsers, will behave as < input type="text" >.
+
+<h2><b>Input Type Color</b></h2>
+<br>The < input type="color" > is used for input fields that should contain a color.
+
+<br>Depending on browser support, a color picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Select your favorite color:
+  < input type="color" name="favcolor" >
+< /form >
+<h2><b>Input Type Date</b></h2>
+<br>The < input type="date" > is used for input fields that should contain a date.
+
+<br>Depending on browser support, a date picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Birthday:
+  < input type="date" name="bday" >
+< /form >
+<p>You can also use the min and max attributes to add restrictions to dates:
+
+
+<h3><b>Example</b></h3>
+< form >
+  Enter a date before 1980-01-01:
+  < input type="date" name="bday" max="1979-12-31" >< br >
+  Enter a date after 2000-01-01:
+  < input type="date" name="bday" min="2000-01-02" >< br>
+< /form >
+
+ <h2><b>Input Type Datetime-local</b></h2>
+<br>The < input type="datetime-local" > specifies a date and time input field, with no time zone.
+
+<br>Depending on browser support, a date picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Birthday (date and time):
+  < input type="datetime-local" name="bdaytime" >
+< /form >
+<h2><b>Input Type Email</b></h2>
+<br>The < input type="email" > is used for input fields that should contain an e-mail address.
+
+<br>Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+<br>Some smartphones recognize the email type, and adds ".com" to the keyboard to match email input.
+
+
+<h3><b>Example</b></h3>
+< form >
+  E-mail:
+  < input type="email" name="email" >
+< /form >
+<h2><b>Input Type File</b></h2>
+<br>The < input type="file" > defines a file-select field and a "Browse" button for file uploads.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Select a file: < input type="file" name="myFile" >
+< /form >
+<h2><b>Input Type Month</b></h2>
+<br>The < input type="month" > allows the user to select a month and year.
+
+<br>Depending on browser support, a date picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Birthday (month and year):
+  < input type="month" name="bdaymonth" >
+< /form >
+<h2><b>Input Type Number</b></h2>
+<br>The < input type="number" > defines a numeric input field.
+
+<br>You can also set restrictions on what numbers are accepted.
+
+The following example displays a numeric input field, where you can enter a value from 1 to 5:
+
+
+<h3><b>Example</b></h3>
+< form >
+  Quantity (between 1 and 5):
+  < input type="number" name="quantity" min="1" max="5" >
+< /form >
+<h2><b>Input Restrictions</b></h3>
+<br>Here is a list of some common input restrictions (some are new in HTML5):
+<p>
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Description</th> 
+    
+  </tr>
+  <tr>
+    <td>disabled</td>
+    <td>Specifies that an input field should be disabled</td> 
+    
+  </tr>
+<tr>
+    <td>max</td>
+    <td>Specifies the maximum value for an input field</td> 
+    
+  </tr>
+<tr>
+    <td>maxlength</td>
+    <td>Specifies the maximum number of character for an input field</td> 
+    
+  </tr>
+<tr>
+    <td>min</td>
+    <td>Specifies the minimum value for an input field</td> 
+    
+  </tr>
+<tr>
+    <td>pattern</td>
+    <td>Specifies a regular expression to check the input value against</td> 
+    
+  </tr>
+<tr>
+    <td>readonly</td>
+    <td>Specifies that an input field is read only (cannot be changed)</td> 
+    
+  </tr>
+<tr>
+    <td>required</td>
+    <td>Specifies that an input field is required (must be filled out)</td> 
+    
+  </tr>
+<tr>
+    <td>size</td>
+    <td>Specifies the width (in characters) of an input field</td> 
+    
+  </tr>
+<tr>
+    <td>step</td>
+    <td>Specifies the legal number intervals for an input field</td> 
+    
+  </tr>
+<tr>
+    <td>value</td>
+    <td>Specifies the default value for an input field</td> 
+    
+  </tr>
+  
+</table>
+
+  
+
+You will learn more about input restrictions in the next chapter.
+
+<br>The following example displays a numeric input field, where you can enter a value from 0 to 100, in steps of 10. The default value is 30:
+
+
+<h3><b>Example</b></h3>
+< form >
+  Quantity:
+  < input type="number" name="points" min="0" max="100" step="10" value="30" >
+< /form >
+<h2><b>Input Type Range</b></h2>
+<br>The < input type="range" > defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:
+
+
+<h3><b>Example</b></h3>
+< form >
+  < input type="range" name="points" min="0" max="10" >
+< /form >
+<h2><b>Input Type Search</b></h2>
+<br>The < input type="search" > is used for search fields (a search field behaves like a regular text field).
+
+<h3><b>Example</b></h3>
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+<h2><b>Input Type Tel</b></h2>
+<br>The < input type="tel" > is used for input fields that should contain a telephone number.
+
+<br>Note: The tel type is currently only supported in Safari 8.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Telephone:
+  < input type="tel" name="usrtel" >
+< /form >
+<h2><b>Input Type Time</b></h2>
+<br>The < input type="time" > allows the user to select a time (no time zone).
+
+<br>Depending on browser support, a time picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Select a time:
+  < input type="time" name="usr_time" >
+< /form >
+<h2><b>Input Type Url</b></h2>
+<br>The < input type="url" > is used for input fields that should contain a URL address.
+
+<br>Depending on browser support, the url field can be automatically validated when submitted.
+
+<br>Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.
+
+<h3><b>Example</b></h3>
+
+< form >
+  Add your homepage:
+  < input type="url" name="homepage" >
+< /form >
+<h2><b>Input Type Week</b></h2>
+The < input type="week" > allows the user to select a week and year.
+
+<br>Depending on browser support, a date picker can show up in the input field.
+
+
+<h3><b>Example</b></h3>
+< form >
+  Select a week:
+  < input type="week" name="week_year" >
+< /form >
+
+
+    </article>
+     <button class="button" type="button"><a href="htmlinputattri.html">Next>></a></button>
+    <button class="button" type="button"><a href="#top">TOP</button>
+    <button class="button" type="button"><a href="form elements.html">&lt&ltPrev</a></button>
+    </div>
+     <aside class="tm-side1">
+        <div class="container">
+  <img  class="circle" src="coders.png" alt="Avatar" height="200" width="350" class="image">
+  <div class="overlay">
+    <div class="text1"><p style="font-size: 25px">WELCOME M.K.GOURISARIA SIR!!!</p></div>
+  </div>
+</div>
+      
+    </aside>
+    <aside class="tm-side">
+      <h3>Related Topics</h3>
+      <ul>
+        <li><a href="#">HTML History</a></li>
+        <li><a href="basics.html">HTML Basics</a></li>
+        <li><a href="elements.html">HTML Elements</a></li>
+        <li><a href="headings.html">HTML Headings</a></li>
+        <li><a href="paragraph.html">HTML Paragraphs</a></li>
+        <li><a href="ss(1).html">HTML Styles</a></li>
+        <li><a href="textformatting.html">HTML Text Formatting</a></li>
+        <li><a href="quotation.html">HTML Quotations</a></li>
+        <li><a href="comments.html">HTML Comments</a></li>
+        <li><a href="color.html">HTML Colors</a></li>
+        <li><a href="cssfile.html">HTML & CSS</a></li>
+        <li><a href="new1.html">HTML Links</a></li>
+        <li><a href="2nd.html">HTML Images</a></li>
+        <li><a href="tables.html">HTML Tables</a></li>
+        <li><a href="lists.html">HTML Lists</a></li>
+        <li><a href="">HTML Blocks</a></li>
+        <li><a href="id.html">HTML Id</a></li>
+        <li><a href="filepaths.html">HTML Filepaths</a></li>
+        <li><a href="entities.html">HTML Entities</a></li><br>
+        <h3><b>HTML FORMS</b></h3>
+        <li><a href="forms.html">FORMS</a></li>
+        <li><a href="form elements.html">FORM Elements </a></li>
+        <li><a href="htmlinput.html">FORM Input types</a></li>
+        <li><a href="htmlinputattri.html">HTML Input attributes</a></li><br>
+        <h3><b>HTML FRAMES</b></h3>
+        <li><a href="html1.html">HTML Frames and Elements</a></li>
+        <li><a href="html2.html">Frames Attributes</a></li>
+        <li><a href="html3.html">HTML iFrames</a></li>
+
+        
+      </ul>
+    </aside>
+     <aside id="chat" class="tm-sidebar">
+      <h3 >Follow Us On</h3>
+      <ul >
+        <li><i class="fa fa-youtube" aria-hidden="true"></i>
+<a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><i class="fa fa-facebook-square" aria-hidden="true"></i><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i><a href="https://www.snapchat.com" target="_blank">Snapchat</a></li>
+      </ul>
+    </aside>
+    <aside class="tm-side2">
+      <h3>For Queries</h3>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>1706108@kiit.ac.in</p>
+      <h3>Address:</h3>
+      <p>3C-216,KP-6,KIIT UNIVERSITY</p>
+    </aside>
+
+</div>
+<footer class="tm-footer">
+      &copy  Copyright AmarSoBilal 2018 
+      
+</footer>
+<script>
+  (function() {
+    var cx = 'YOUR_ENGINE_ID';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="YOUR_RESULTS_PAGE_URL"></gcse:searchbox-only>
+</body>
+</html>

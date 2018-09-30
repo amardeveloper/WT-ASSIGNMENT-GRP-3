@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASB tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="amar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .circle{
+      border-radius: 50%;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.text1{
+     color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+</style>
+</head>
+<body>
+  <header class="tm-header">
+  <div class="tm-container">
+      
+    <img class="tm-logo" src="logo2.JPG" alt="logo" width="100" height="70" class="tm-logo"/>
+    <img src="myself.gif" alt="AmarSoBilal" height="70" width="70">
+    <nav class="tm-nav">
+    <a href="#"><i class="fa fa-home" ></i>HOME</a>
+     <a href="about.html" target="_blank"><i class="fa fa-code" aria-hidden="true"></i>About</a>
+    <a href="#chat"><i class="fa fa-comments" aria-hidden="true"></i>Contact Us</a>
+    <a href="newform.html" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>Log In</a>
+    <div class="sidebar">
+</div>
+
+<div class="main-content">
+  
+  
+</div>
+  </nav>
+    </div>
+    </header> 
+      
+      <div class="tm-container">
+
+        <div class="tm-content">
+
+   
+    <article class="tm-article">
+<h1>HTML Input Attributes</h1></head>
+<body>
+
+<h2><b>The value Attribute</b></h2>
+<br>The value attribute specifies the initial value for an input field:
+
+<h3><b>Example</b></h3>
+< form action="" >
+  First name:< br >
+  < input type="text" name="firstname" value="John" >
+< /form >
+<h2><b>The readonly Attribute</b></h2>
+<br>The readonly attribute specifies that the input field is read only (cannot be changed):
+
+<h3><b>Example</b></h3>
+< form action="" >
+  First name:< br >
+  < input type="text" name="firstname" value="John" readonly >
+< /form >
+<h2><b>The disabled Attribute</b></h2>
+<br>The disabled attribute specifies that the input field is disabled.
+
+<br>A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form:
+
+<h3><b>Example</b></h3>
+< form action="" >
+  First name:< br >
+  < input type="text" name="firstname" value="John" disabled >
+< /form >
+ 
+<h2><b>The size Attribute</b></h2>
+<br>The size attribute specifies the size (in characters) for the input field:
+
+<h3><b>Example</b></h3>
+< form action="" >
+  First name:< br >
+  < input type="text" name="firstname" value="John" size="40" >
+< /form >
+<h2><b>The maxlength Attribute</b></h2>
+<br>The maxlength attribute specifies the maximum allowed length for the input field:
+
+<h3><b>Example</b></h3>
+< form action="" >
+  First name:< br >
+  < input type="text" name="firstname" maxlength="10" >
+< /form >
+<br>With a maxlength attribute, the input field will not accept more than the allowed number of characters.
+
+<br>The maxlength attribute does not provide any feedback. If you want to alert the user, you must write JavaScript code.
+
+<p>Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must be checked by the receiver (the server) as well!
+
+<h2><b>HTML5 Attributes</b></h2>
+<br>HTML5 added the following attributes for < input >:
+
+<br>1.autocomplete
+<br>2.autofocus
+<br>3.form
+<br>4.formaction
+<br>5.formenctype
+<br>6.formmethod
+<br>7.formnovalidate
+<br>8.formtarget
+<br>9.height and width
+<br>10.list
+<br>11a.min and max
+<br>12.multiple
+<br>13.pattern (regexp)
+<br>14.placeholder
+<br>15.required
+<br>16.step
+<br>and the following attributes for < form >:
+
+<br>17.autocomplete
+<br>18.novalidate
+<h2><b>The autocomplete Attribute</b></h2>
+<br>The autocomplete attribute specifies whether a form or input field should have autocomplete on or off.
+
+<br>When autocomplete is on, the browser automatically completes the input values based on values that the user has entered before.
+
+<br><b>Tip:</b> It is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice versa.
+
+<br>The autocomplete attribute works with < form > and the following < input > types: text, search, url, tel, email, password, datepickers, range, and color.
+
+
+<h3><b>Example</b></h3>
+<br>An HTML form with autocomplete on (and off for one input field):
+
+< form action="/action_page.php" autocomplete="on" >
+  First name:< input type="text" name="fname" >< br >
+  Last name: < input type="text" name="lname" >< br >
+  E-mail: < input type="email" name="email" autocomplete="off" >< br >
+  < input type="submit" >
+< /form >
+<br><b>Tip:</b> In some browsers you may need to activate the autocomplete function for this to work.
+
+<h2><b>The novalidate Attribute</b></h2>
+<br>The novalidate attribute is a < form > attribute.
+
+<br>When present, novalidate specifies that the form data should not be validated when submitted.
+
+
+<h3><b>Example</b></h3>
+<br>Indicates that the form is not to be validated on submit:
+
+< form action="/action_page.php" novalidate >
+  E-mail: < input type="email" name="user_email" >
+  < input type="submit" >
+< /form >
+<h2><b>The autofocus Attribute</b></h2>
+<br>The autofocus attribute specifies that the input field should automatically get focus when the page loads.
+
+
+<h3><b>Example</b></h3>
+<br>Let the "First name" input field automatically get focus when the page loads:
+
+<br>First name:< input type="text" name="fname" autofocus >
+<h2><b>The form Attribute</b></h2>
+<br>The form attribute specifies one or more forms an < input > element belongs to.
+
+<br>Tip: To refer to more than one form, use a space-separated list of form ids.
+
+
+<h3><b>Example</b></h3>
+<br>An input field located outside the HTML form (but still a part of the form):
+
+< form action="/action_page.php" id="form1" >
+  First name: < input type="text" name="fname" >< br >
+  < input type="submit" value="Submit" >
+< /form >
+
+Last name: < input type="text" name="lname" form="form1" >
+<h2><b>The formaction Attribute</b></h2>
+<br>The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.
+
+<br>The formaction attribute overrides the action attribute of the <form> element.
+
+<br>The formaction attribute is used with type="submit" and type="image".
+
+
+<h3><b>Example</b></h3>
+<br>An HTML form with two submit buttons, with different actions:
+
+< form action="/action_page.php" >
+  First name: < input type="text" name="fname" >< br >
+  Last name: < input type="text" name="lname" >< br >
+  < input type="submit" value="Submit" >< br >
+  < input type="submit" formaction="/action_page2.php"
+  value="Submit as admin" >
+< /form >
+<h2><b>The formenctype Attribute</b></h2>
+<br>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").
+
+<br>The formenctype attribute overrides the enctype attribute of the < form > element.
+
+<br>The formenctype attribute is used with type="submit" and type="image".
+
+
+<h3><b>Example</b></h3>
+<br>Send form-data that is default encoded (the first submit button), and encoded as "multipart/form-data" (the second submit button):
+<br>
+< form action="/action_page_binary.asp" method="post" >
+  First name: < input type="text" name="fname" >< br >
+  < input type="submit" value="Submit" >
+  < input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data" >
+< /form >
+<h2><b>The formmethod Attribute</b></h2>
+<br>The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+<br>The formmethod attribute overrides the method attribute of the <form> element.
+
+<br>The formmethod attribute can be used with type="submit" and type="image".
+
+
+<h3><b>Example</b></h3>
+<br>The second submit button overrides the HTTP method of the form:
+
+<br>< form action="/action_page.php" method="get" >
+  First name: < input type="text" name="fname" >< br >
+  Last name: < input type="text" name="lname" >< br >
+  < input type="submit" value="Submit" >
+  < input type="submit" formmethod="post" value="Submit using POST" >
+< /form >
+<h2><b>The formnovalidate Attribute</b></h2>
+<br>The formnovalidate attribute overrides the novalidate attribute of the <form> element.
+
+<br>The formnovalidate attribute can be used with type="submit".
+
+
+<h3><b>Example</b></h3>
+<br>A form with two submit buttons (with and without validation):
+
+< form action="/action_page.php" >
+  E-mail: < input type="email" name="userid" >< br >
+  < input type="submit" value="Submit" >< br >
+  < input type="submit" formnovalidate value="Submit without validation" >
+< /form >
+<h2><b>The formtarget Attribute</b></h2>
+<br>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+
+<br>The formtarget attribute overrides the target attribute of the <form> element.
+
+<br>The formtarget attribute can be used with type="submit" and type="image".
+
+
+<h3><b>Example</b></h3>
+<br>A form with two submit buttons, with different target windows:
+
+< form action="/action_page.php" >
+  First name: < input type="text" name="fname" >< br >
+  Last name: < input type="text" name="lname" >< br >
+  < input type="submit" value="Submit as normal" >
+  < input type="submit" formtarget="_blank"
+  value="Submit to a new window" >
+< /form >
+<h2><b>The height and width Attributes</b></h2>
+<br>The height and width attributes specify the height and width of an <input type="image"> element.
+
+<br>Always specify the size of images. If the browser does not know the size, the page will flicker while images load.
+
+
+<h3><b>Example</b></h3>
+<br>Define an image as the submit button, with height and width attributes:
+
+<br>< input type="image" src="img_submit.gif" alt="Submit" width="48" height="48" >
+<h2><b>The list Attribute</b></h2>
+The list attribute refers to a < datalist > element that contains pre-defined options for an < input > element.
+
+
+<h3><b>Example</b></h3>
+An < input > element with pre-defined values in a < datalist >:
+
+< input list="browsers" >
+
+< datalist id="browsers" >
+  < option value="Internet Explorer" >
+  < option value="Firefox" >
+  < option value="Chrome" >
+  < option value="Opera" >
+  < option value="Safari" >
+< /datalist >
+<h2><b>The min and max Attributes</b></h2>
+<br>The min and max attributes specify the minimum and maximum values for an < input > element.
+
+<br>The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+
+
+<h3><b>Example</b></h3>
+<br>< input > elements with min and max values:
+
+<br>Enter a date before 1980-01-01:
+< input type="date" name="bday" max="1979-12-31" >
+
+<br>Enter a date after 2000-01-01:
+< input type="date" name="bday" min="2000-01-02" >
+
+<br>Quantity (between 1 and 5):
+< input type="number" name="quantity" min="1" max="5" >
+<h2><b>The multiple Attribute</b></h2>
+<br>The multiple attribute specifies that the user is allowed to enter more than one value in the < input > element.
+
+<br>The multiple attribute works with the following input types: email, and file.
+
+
+<h3><b>Example</b></h3>
+<br>A file upload field that accepts multiple values:
+
+<br>Select images: < input type="file" name="img" multiple >
+<h2><b>The pattern Attribute</b></h2>
+<br>The pattern attribute specifies a regular expression that the < input > element's value is checked against.
+
+<br>The pattern attribute works with the following input types: text, search, url, tel, email, and password.
+
+<br><b>Tip:</b> Use the global title attribute to describe the pattern to help the user.
+
+Learn more about regular expressions in our JavaScript tutorial.
+
+
+<h3><b>Example</b></h3>
+<br>An input field that can contain only three letters (no numbers or special characters):
+
+<br>Country code: < input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" >
+<h2><b>The placeholder Attribute</b></h2>
+<br>The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).
+
+<br>The hint is displayed in the input field before the user enters a value.
+
+<br>The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+
+<h3><b>Example</b></h3>
+<br>An input field with a placeholder text:
+
+<br>< input type="text" name="fname" placeholder="First name" >
+<h2><b>The required Attribute</b></h2>
+<br>The required attribute specifies that an input field must be filled out before submitting the form.
+
+<br>The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+
+<h3><b>Example</b></h3>
+<br>A required input field:
+
+<br>Username: < input type="text" name="usrname" required >
+<h2><b>The step Attribute</b></h2>
+<br>The step attribute specifies the legal number intervals for an < input > element.
+
+<h3><b>Example</b></h3>If step="3", legal numbers could be -3, 0, 3, 6, etc.
+
+<br><b>Tip:</b> The step attribute can be used together with the max and min attributes to create a range of legal values.
+
+<br>The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.
+
+
+<h3><b>Example</b></h3>
+<br>An input field with a specified legal number intervals:
+
+< input type="number" name="points" step="3" >
+
+
+
+
+    </article>
+     <button class="button" type="button"><a href="html1.html">Next>></a></button>
+    <button class="button" type="button"><a href="#top">TOP</button>
+    <button class="button" type="button"><a href="htmlinput.html">&lt&ltPrev</a></button>
+    </div>
+     <aside class="tm-side1">
+        <div class="container">
+  <img  class="circle" src="coders.png" alt="Avatar" height="200" width="350" class="image">
+  <div class="overlay">
+    <div class="text1"><p style="font-size: 25px">WELCOME M.K.GOURISARIA SIR!!!</p></div>
+  </div>
+</div>
+      
+    </aside>
+    <aside class="tm-side">
+      <h3>Related Topics</h3>
+      <ul>
+        <li><a href="#">HTML History</a></li>
+        <li><a href="basics.html">HTML Basics</a></li>
+        <li><a href="elements.html">HTML Elements</a></li>
+        <li><a href="headings.html">HTML Headings</a></li>
+        <li><a href="paragraph.html">HTML Paragraphs</a></li>
+        <li><a href="ss(1).html">HTML Styles</a></li>
+        <li><a href="textformatting.html">HTML Text Formatting</a></li>
+        <li><a href="quotation.html">HTML Quotations</a></li>
+        <li><a href="comments.html">HTML Comments</a></li>
+        <li><a href="color.html">HTML Colors</a></li>
+        <li><a href="cssfile.html">HTML & CSS</a></li>
+        <li><a href="new1.html">HTML Links</a></li>
+        <li><a href="2nd.html">HTML Images</a></li>
+        <li><a href="tables.html">HTML Tables</a></li>
+        <li><a href="lists.html">HTML Lists</a></li>
+        <li><a href="">HTML Blocks</a></li>
+        <li><a href="id.html">HTML Id</a></li>
+        <li><a href="filepaths.html">HTML Filepaths</a></li>
+        <li><a href="entities.html">HTML Entities</a></li><br>
+        <h3><b>HTML FORMS</b></h3>
+        <li><a href="forms.html">FORMS</a></li>
+        <li><a href="form elements.html">FORM Elements </a></li>
+        <li><a href="htmlinput.html">FORM Input types</a></li>
+        <li><a href="htmlinputattri.html">HTML Input attributes</a></li><br>
+        <h3><b>HTML FRAMES</b></h3>
+        <li><a href="html1.html">HTML Frames and Elements</a></li>
+        <li><a href="html2.html">Frames Attributes</a></li>
+        <li><a href="html3.html">HTML iFrames</a></li>
+
+        
+      </ul>
+    </aside>
+     <aside id="chat" class="tm-sidebar">
+      <h3 >Follow Us On</h3>
+      <ul >
+        <li><i class="fa fa-youtube" aria-hidden="true"></i>
+<a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><i class="fa fa-facebook-square" aria-hidden="true"></i><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i><a href="https://www.snapchat.com" target="_blank">Snapchat</a></li>
+      </ul>
+    </aside>
+    <aside class="tm-side2">
+      <h3>For Queries</h3>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>1706108@kiit.ac.in</p>
+      <h3>Address:</h3>
+      <p>3C-216,KP-6,KIIT UNIVERSITY</p>
+    </aside>
+
+</div>
+<footer class="tm-footer">
+      &copy  Copyright AmarSoBilal 2018 
+      
+</footer>
+<script>
+  (function() {
+    var cx = 'YOUR_ENGINE_ID';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="YOUR_RESULTS_PAGE_URL"></gcse:searchbox-only>
+</body>
+</html>
